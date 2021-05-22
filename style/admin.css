@@ -1,3 +1,7 @@
 .buttons{
 	display: block;
 }
+p{
+	color: blue;
+	font-size: 500px;
+}

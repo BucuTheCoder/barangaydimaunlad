@@ -1,5 +1,5 @@
 <?php
-	//require('./sessioncheck.php');
+	include_once('validatelogin.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +28,7 @@
 
 					<div class="right">
 						<div class="login_Content">
-							<form method="POST" action="validate.php"> 
+							<form method="POST" action="validatelogin.php"> 
 								<h1> User Login </h1>
 								<div class="input">
 						 		<label>Username</label>

@@ -1,5 +1,5 @@
 <?php
-	//require('./sessioncheck.php');
+	require_once('./sessioncheck.php');	
 ?>
 
 <!DOCTYPE html>
@@ -36,13 +36,25 @@
 						</label>
 
 					<ul>
-  						<li><a class="active" href="index.html">Home</a></li>
-  						<li><a href="news.html">News</a></li>
-  						<li><a href="contact.html">Contact</a></li>
-  						<li><a href="about.html">About</a></li>
+  						<li><a class="active" href="index.php">Home</a></li>
+  						<li><a href="news.php">News</a></li>
+  						<li><a href="contact.php">Contact</a></li>
+  						<li><a href="about.php">About</a></li>
+  						<li><a href="bgapp.php">Infograph</a></li>
+
+  						<li>
+  						<form id="logout" action="logout.php" method="POST">
+						<?php echo $_SESSION['username'];?>
+						<input type="submit" value="logout" /> 
+						</form>
+						</li>
 					</ul>
+
+					
+
 				</nav>
 	</div>
+
 	<div class="container">
 	<!--CONTENT-->
 		<h1> BARANGAY DI-MAUNLAD </h1>
@@ -128,9 +140,9 @@
 				</p>
 			</div>
 			</div>
-	</div>
+		</div>
 
-</div>
+	</div>
 </div>
 </div>
 <!--//CONTENT-->
